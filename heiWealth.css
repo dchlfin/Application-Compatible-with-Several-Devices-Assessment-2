@@ -66,6 +66,27 @@ nav ul li a {
     font-weight: 700; 
 }
 
+a.home:hover {
+    background-image: linear-gradient(#d6a499, #eae6e2)
+}
+
+a.principles:hover {
+  background-image: linear-gradient(#e4c9b6, #eae6e2) 
+}
+
+a.diet:hover {
+  background-image: linear-gradient(#b7baa5, #eae6e2) 
+}
+
+a.game:hover {
+  background-image: linear-gradient(#a4b1ba, #eae6e2) 
+}
+
+a.faq:hover {
+  background-image: linear-gradient(#aea4ba, #eae6e2) 
+}
+
+
 .center {
     text-align: center;
     margin-top: 1.25em; 
