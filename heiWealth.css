@@ -15,6 +15,9 @@ body {
     color: #211009;
     font-family: "DM Sans", sans-serif;
     font-style: normal;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative; 
 }
 
 p {
