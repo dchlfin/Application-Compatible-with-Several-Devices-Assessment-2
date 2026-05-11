@@ -1,6 +1,6 @@
 // initializations
 // toggle nav start
-    const btn = document.getElementById('toggleNavBtn')
+    const btn = document.getElementById('toggle-nav-btn')
     const nav = document.getElementById('nav')
 // toggle nav end
 
