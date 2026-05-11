@@ -4,6 +4,7 @@
     box-sizing: border-box; 
 }
 
+/* 
 * {
     margin: 0; 
 }
@@ -106,4 +107,25 @@ a.faq:hover {
     font-weight: 400;
     font-size: .4em;
     vertical-align: super;
+} */
+
+header {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center; 
+    padding: 3rem 1rem;
+}
+
+/* removes default margins */
+* {
+    margin: 0;
+}
+
+body {
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #eae6e2;
+    color: #211009;
+    font-family: "DM Sans", sans-serif;
 }
