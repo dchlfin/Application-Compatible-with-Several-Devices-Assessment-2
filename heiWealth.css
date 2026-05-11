@@ -283,12 +283,30 @@ body {
     background-image:linear-gradient(#c7cfd4, #eae6e2, #eae6e2);
     row-gap: 2rem;
     padding: 7rem 1rem; 
+    align-items: center;
+}
+
+.p-sect h2, .p-sect p {
+    min-width: 311px; 
+}
+
+.p-sect h2 {
+    text-align: center; 
 }
 
 #p1 #p1-kanji {
     font-size: 3rem;
     text-align: center;
     color: #4b555c;
+}
+
+#p1 ul {
+    text-wrap: wrap; 
+}
+
+#p3 {
+    background-image: url('assets/p3-mobile-bg.png');
+    background-size: cover;
 }
 
 @media screen and (min-width: 720px) {
