@@ -155,9 +155,6 @@ body {
 
 .kanji {
     font-family: "Noto Serif JP", serif;
-    writing-mode: vertical-rl;
-    white-space: nowrap;
-    letter-spacing: .3em;
 }
 
 
@@ -168,6 +165,9 @@ body {
     transform: translate(-50%, 50%);
     color: #eae6e2;
     font-size: 1.2rem;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    letter-spacing: .3em;
 }
 
 #ck-2 {
@@ -177,6 +177,9 @@ body {
     transform: translate(50%, -50%);
     color: #eae6e2;
     font-size: 1.2rem;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    letter-spacing: .3em;
 }
 
 #cp {
