@@ -232,11 +232,8 @@ body {
 
 /* === principles === */
 .p-header {
-    display: grid;
-    grid-template-rows: 1fr 1fr; 
-    grid-template-areas:
-    "kanji",
-    "shokuiku";
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 7rem 1rem;
@@ -245,14 +242,12 @@ body {
 }
 
 .p-header h1 {
-    grid-area: "kanji";
     text-align: center;
     font-size: 6rem;
     font-weight: 400; 
 }
 
 .p-header h2 {
-    grid-area: "shokuiku";
     text-align: center;
     font-size: 3rem;
     font-family: "Vollkorn", serif; 
