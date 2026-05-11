@@ -28,7 +28,7 @@ body {
     background-color: #eae6e2;
     color: #211009;
     font-family: "DM Sans", sans-serif;
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem;
 }
 
 #brand-kanji {
@@ -229,6 +229,36 @@ body {
     margin: 2rem;
     font-size: 1rem; 
 }
+
+/* === principles === */
+.p-header {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas:
+    "kanji",
+    "shokuiku";
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 1rem;
+    background-image: linear-gradient(#b7baa5, #b7baa5, #eae6e2, #eae6e2);
+    color: #4b555c;
+}
+
+.p-header h1 {
+    grid-area: "kanji";
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 400; 
+}
+
+.p-header h2 {
+    grid-area: "shokuiku";
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Vollkorn", serif; 
+    font-weight: 400; 
+}
+
 
 @media screen and (min-width: 720px) {
     #toggle-nav-btn {
