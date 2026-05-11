@@ -133,3 +133,30 @@ body {
     font-weight: 400;
     padding-right: .2em; 
 }
+
+.nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
+    margin-top: 10px;
+    border-radius: 5px; 
+}
+
+.nav.open {
+    max-height: 200px; 
+}
+
+.nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0; 
+}
+
+.nav ul li {
+    padding: 8px;
+    border-bottom: 1px solid transparent;
+}
+
+.nav ul li:last-child {
+    border: none;
+}
