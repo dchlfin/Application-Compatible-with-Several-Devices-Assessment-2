@@ -15,6 +15,7 @@ header {
     z-index: 1000; 
     background-color: #eae6e2;
     padding-top: 3rem;
+    /* padding: 3rem 1rem 0 1rem; */
 }
 
 /* removes default margins */
@@ -61,11 +62,11 @@ body {
     overflow: hidden;
     transition: max-height .4s ease;
     margin-top: 10px;
-    background-image: linear-gradient(#b5abaa, #eae6e2, #eae6e2, #eae6e2)
+    background-image: linear-gradient(#b5abaa, #eae6e2, #eae6e2, #eae6e2);
 }
 
 .nav.open {
-    max-height: 230px; 
+    max-height: 300px; 
 }
 
 .nav ul {
@@ -75,7 +76,7 @@ body {
 }
 
 .nav ul li {
-    padding: .5rem;
+    padding: 1rem;
     border-bottom: 1px solid transparent;
 }
 
@@ -260,6 +261,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    margin-bottom: 7rem;
 }
 
 #p-intro * {
@@ -275,6 +277,19 @@ body {
     text-justify: inter-word; 
 }
 
+.p-sect {
+    display: flex;
+    flex-direction: column; 
+    background-image:linear-gradient(#c7cfd4, #eae6e2, #eae6e2);
+    row-gap: 2rem;
+    padding: 7rem 1rem; 
+}
+
+#p1 #p1-kanji {
+    font-size: 3rem;
+    text-align: center;
+    color: #4b555c;
+}
 
 @media screen and (min-width: 720px) {
     #toggle-nav-btn {
