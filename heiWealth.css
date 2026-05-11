@@ -7,9 +7,13 @@
 header {
     display: flex; 
     flex-direction: row;
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items:center; 
-    /* padding: 3rem 1rem 0 1rem; */
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    background-color: #eae6e2;
     padding-top: 3rem;
 }
 
@@ -47,7 +51,12 @@ body {
     padding-right: .2em; 
 }
 
+.nav-toggle-btn {
+    display: block;
+}
+
 .nav {
+    width: 100%; 
     max-height: 0;
     overflow: hidden;
     transition: max-height .4s ease;
@@ -62,12 +71,10 @@ body {
 .nav ul {
     list-style: none;
     padding: 0; 
-    /* padding: 10px 0 10px 0; */
     margin: 0; 
 }
 
 .nav ul li {
-    /* padding: 8px 0 8px 0; */
     padding: .5rem;
     border-bottom: 1px solid transparent;
 }
@@ -104,15 +111,15 @@ body {
 } 
 
 .carousel {
-border: 1px solid #eae6e2;
-width: 90%;
-max-width: 1536px;
-margin-inline: auto;
-position: relative; 
-height: 380px;
-margin: 4em auto 4em auto;
-overflow: hidden;  
-white-space: nowrap;
+    border: 1px solid #eae6e2;
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative; 
+    height: 380px;
+    margin: 4em auto 4em auto;
+    overflow: hidden;  
+    white-space: nowrap;
 }
 
 @keyframes scrollright {
@@ -122,28 +129,28 @@ white-space: nowrap;
 }
 
 .carousel div img {
-  width: 570px;
-  height: 380px;
-  z-index: -1;
-  position: absolute; 
-  right: max(calc(570px * 2.05), 100%);
-  animation-name: scrollright;
-  animation-duration: 40s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+    width: 570px;
+    height: 380px;
+    z-index: -1;
+    position: absolute; 
+    right: max(calc(570px * 2.05), 100%);
+    animation-name: scrollright;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 /* (40s / 3 * (3 - x) * -1 */
 .img1 {
-  animation-delay: calc(40s / 3 * (3 - 1) * -1);
+    animation-delay: calc(40s / 3 * (3 - 1) * -1);
 }
 
 .img2 {
-  animation-delay: calc(40s / 3 * (3 - 2) * -1);
+    animation-delay: calc(40s / 3 * (3 - 2) * -1);
 }
 
 .img3 {
-  animation-delay: calc(40s / 3 * (3 - 3) * -1);
+    animation-delay: calc(40s / 3 * (3 - 3) * -1);
 }
 
 .kanji {
@@ -152,6 +159,7 @@ white-space: nowrap;
     white-space: nowrap;
     letter-spacing: .3em;
 }
+
 
 #ck-1 {
     position: absolute;
@@ -181,9 +189,14 @@ white-space: nowrap;
     font-weight: 400;
     font-style: italic;
     font-size: 1rem;
-    text-align: center;
+    min-width: 180px;
+    justify-self: center;
 }
 
+#cp p {
+    text-align: center;
+    text-wrap: wrap;
+}
 
 #home-intro * {
     text-align: center;
@@ -212,6 +225,99 @@ white-space: nowrap;
     text-decoration: none;
     margin: 2rem;
     font-size: 1rem; 
+}
+
+@media screen and (min-width: 720px) {
+    #toggle-nav-btn {
+        display: none;
+    }
+
+    header {
+        justify-content: center; 
+    }
+
+    header h1 {
+        font-size: 3rem; 
+    }
+
+    .nav {
+        max-height: none;
+        overflow: visible;
+        position: sticky;
+        top: 0; 
+        z-index: 1000;
+        text-align: center;
+        background-image: none;
+        background-color: #eae6e2;
+    }
+
+    .nav ul li {
+        padding: 0 1em 0 1em;
+        display: inline-block;
+        /* margin: 0 1em 0 1em;  */
+        line-height: 2rem;
+    }
+
+    .nav ul li a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: #211009;
+        font-weight: 700;
+    } 
+
+    @keyframes scrollright {
+        to {
+            right: -690px;
+        }
+    }
+
+    .carousel {
+        height: 460px;
+    }
+
+    .carousel div img {
+        width: 690px;
+        height: 460px;
+        z-index: -1;
+        position: absolute;
+        right: max(calc(690px * 2.05), 100%); 
+    }
+
+    .img1 {
+        animation-delay: calc(40s / 3 * (3 - 1) * -1);
+    }
+
+    .img2 {
+        animation-delay: calc(40s / 3 * (3 - 2) * -1);
+    }
+
+    .img3 {
+        animation-delay: calc(40s / 3 * (3 - 3) * -1);}
+    
+    #ck-1, #ck-2 {
+        font-size: 1.5rem;
+    }
+
+    #cp p {
+        padding-top: 1rem;
+        min-width: 400px;
+    }
+
+    #home-intro * {
+        max-width: 350px;
+    }
+
+    #home-intro h2 {
+        font-size: 3rem;
+    }
+
+    #home-intro p {
+        font-size: 1.2rem;
+    }
+
+    #title-desc {
+        margin: 5em;
+    }
 }
 
 
