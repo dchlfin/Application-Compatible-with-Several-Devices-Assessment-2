@@ -16,11 +16,11 @@
 </head>
 <body>
     <header>
-        <h1><span class = "hei">hei</span>Wealth<span id = "brand-kanji">食育</span></h1>
-        <div><img src="assets/nav_toggle_icon.png" alt=""></div>
+        <h1><span class="hei">hei</span>Wealth<span id="brand-kanji">食育</span></h1>
+        <div class="btn" id="toggleNavBtn"><img src="assets/nav_toggle_icon.png"></div>
     </header>
 
-    <!-- <nav>
+    <nav class = "nav" id = "nav">
         <ul>
             <li><a class = "home" href="heiWealth-home.html">Home</a></li>
             <li><a class = "principles" href="heiWealth-principles.html">Principles</a></li>
@@ -28,9 +28,9 @@
             <li><a class = "game" href="heiWealth-game.html">Build Your Plate</a></li>
             <li><a class = "faq" href="heiWealth-faq.html">FAQ</a></li>
         </ul>
-    </nav> -->
+    </nav>
     
-    <section class="carousel">
+    <!-- <section class="carousel">
         <div class="carousel reveal">
             <div>
                 <img src="assets/hp-img3" class="img1" title="Published on February 13, 2019, by Rita Chou">
@@ -42,6 +42,15 @@
                 <img src="Assets/hp-img1.png" class="img3" title="Published on July 4, 2024, by Buddy Photo">
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <script>
+        const btn = document.getElementById('toggleNavBtn')
+        const nav = document.getElementById('nav')
+
+        btn.addEventListener("click", () => {
+            nav.classList.toggle("open")
+        })
+    </script>
 </body>
 </html>
