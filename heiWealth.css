@@ -189,3 +189,52 @@ body {
 .nav ul li.faq:hover {
     background-image: linear-gradient(#aea4ba, #eae6e2) 
 } 
+
+.carousel 
+{
+border: 1px solid #eae6e2;
+width: 90%;
+max-width: 1536px;
+margin-inline: auto;
+position: relative; 
+height: 380px;
+margin: 4em auto 4em auto;
+overflow: hidden;  
+white-space: nowrap;
+}
+
+@keyframes scrollright 
+{
+  to {
+    right: -570px;
+  }
+}
+
+.carousel div img
+{
+  width: 570px;
+  height: 380px;
+  z-index: -1;
+  position: absolute; 
+  right: max(calc(570px * 2.05), 100%);
+  animation-name: scrollright;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* (40s / 3 * (3 - x) * -1 */
+.img1 
+{
+  animation-delay: calc(40s / 3 * (3 - 1) * -1);
+}
+
+.img2 
+{
+  animation-delay: calc(40s / 3 * (3 - 2) * -1);
+}
+
+.img3 
+{
+  animation-delay: calc(40s / 3 * (3 - 3) * -1);
+}
