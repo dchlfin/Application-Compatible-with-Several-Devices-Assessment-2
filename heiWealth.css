@@ -98,13 +98,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items:center; 
-    padding: 3rem 1rem 0 1rem;
+    /* padding: 3rem 1rem 0 1rem; */
+    padding-top: 3rem;
 }
 
 /* removes default margins */
 * {
     margin: 0;
-}
+} 
 
 body {
     text-align: justify;
@@ -112,6 +113,7 @@ body {
     background-color: #eae6e2;
     color: #211009;
     font-family: "DM Sans", sans-serif;
+    margin: 0 1rem 0 1rem;
 }
 
 #brand-kanji {
@@ -190,10 +192,9 @@ body {
     background-image: linear-gradient(#aea4ba, #eae6e2) 
 } 
 
-.carousel 
-{
+.carousel {
 border: 1px solid #eae6e2;
-width: 90%;
+width: 100%;
 max-width: 1536px;
 margin-inline: auto;
 position: relative; 
@@ -203,15 +204,13 @@ overflow: hidden;
 white-space: nowrap;
 }
 
-@keyframes scrollright 
-{
+@keyframes scrollright {
   to {
     right: -570px;
   }
 }
 
-.carousel div img
-{
+.carousel div img {
   width: 570px;
   height: 380px;
   z-index: -1;
@@ -224,17 +223,39 @@ white-space: nowrap;
 }
 
 /* (40s / 3 * (3 - x) * -1 */
-.img1 
-{
+.img1 {
   animation-delay: calc(40s / 3 * (3 - 1) * -1);
 }
 
-.img2 
-{
+.img2 {
   animation-delay: calc(40s / 3 * (3 - 2) * -1);
 }
 
-.img3 
-{
+.img3 {
   animation-delay: calc(40s / 3 * (3 - 3) * -1);
 }
+
+
+.line {
+    border: 1px solid #9f9c9a;
+    border-width: thin;
+    margin: 0 .5rem -1rem auto;
+    height: 150px;
+    display: inline-block;
+}
+
+#home-intro * {
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.btn {
+    border: 1px solid #211009;
+    color: #211009;
+    padding: .5rem 2rem; 
+    display: inline-block;
+    text-decoration: none;
+    margin: 2rem;
+    font-size: 1rem; 
+}
+
