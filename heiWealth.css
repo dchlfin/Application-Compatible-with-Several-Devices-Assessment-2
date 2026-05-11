@@ -194,7 +194,7 @@ body {
 
 .carousel {
 border: 1px solid #eae6e2;
-width: 100%;
+width: 90%;
 max-width: 1536px;
 margin-inline: auto;
 position: relative; 
@@ -234,6 +234,45 @@ white-space: nowrap;
 .img3 {
   animation-delay: calc(40s / 3 * (3 - 3) * -1);
 }
+
+.kanji {
+    font-family: "Noto Serif JP", serif;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    letter-spacing: .3em;
+}
+
+#ck-1 {
+    position: absolute;
+    top: -20%; 
+    left: 48%; 
+    transform: translate(-50%, 50%);
+    color: #eae6e2;
+    font-size: 1.2rem;
+}
+
+#ck-2 {
+    position: absolute;
+    top: 40%; 
+    left: 52%;
+    transform: translate(50%, -50%);
+    color: #eae6e2;
+    font-size: 1.2rem;
+}
+
+#cp {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    font-family: "Volkorn", serif;
+    color: #eae6e2;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: center;
+}
+
 
 #home-intro * {
     text-align: center;
