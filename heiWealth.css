@@ -148,12 +148,14 @@ body {
 
 .nav ul {
     list-style: none;
-    padding: 10px;
+    padding: 0; 
+    /* padding: 10px 0 10px 0; */
     margin: 0; 
 }
 
 .nav ul li {
-    padding: 8px;
+    /* padding: 8px 0 8px 0; */
+    padding: .5rem;
     border-bottom: 1px solid transparent;
 }
 
@@ -167,3 +169,23 @@ body {
     color: #211009;
     font-weight: 700;
 }
+
+.nav ul li.home:hover {
+    background-image: linear-gradient(#d6a499, #eae6e2) 
+}
+
+.nav ul li.principles:hover {
+    background-image: linear-gradient(#e4c9b6, #eae6e2) 
+}
+
+.nav ul li.diet:hover {
+    background-image: linear-gradient(#b7baa5, #eae6e2) 
+}
+
+.nav ul li.game:hover {
+    background-image: linear-gradient(#a4b1ba, #eae6e2)  
+}
+
+.nav ul li.faq:hover {
+    background-image: linear-gradient(#aea4ba, #eae6e2) 
+} 
