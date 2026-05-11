@@ -231,27 +231,48 @@ body {
 }
 
 /* === principles === */
-.p-header {
+#p-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 7rem 1rem;
+    gap: 1rem;
     background-image: linear-gradient(#b7baa5, #b7baa5, #eae6e2, #eae6e2);
     color: #4b555c;
 }
 
-.p-header h1 {
+#p-header h1 {
     text-align: center;
     font-size: 6rem;
     font-weight: 400; 
 }
 
-.p-header h2 {
+#p-header h2 {
     text-align: center;
     font-size: 3rem;
     font-family: "Vollkorn", serif; 
     font-weight: 400; 
+}
+
+#p-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#p-intro * {
+    max-width: 272px;
+}
+
+#p-intro h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#p-intro p {
+    text-justify: inter-word; 
 }
 
 
