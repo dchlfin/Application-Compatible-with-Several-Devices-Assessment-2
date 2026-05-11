@@ -98,7 +98,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items:center; 
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 0 1rem;
 }
 
 /* removes default margins */
@@ -139,11 +139,11 @@ body {
     overflow: hidden;
     transition: max-height .4s ease;
     margin-top: 10px;
-    border-radius: 5px; 
+    background-image: linear-gradient(#b5abaa, #eae6e2, #eae6e2, #eae6e2)
 }
 
 .nav.open {
-    max-height: 200px; 
+    max-height: 230px; 
 }
 
 .nav ul {
@@ -159,4 +159,11 @@ body {
 
 .nav ul li:last-child {
     border: none;
+}
+
+.nav ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #211009;
+    font-weight: 700;
 }
