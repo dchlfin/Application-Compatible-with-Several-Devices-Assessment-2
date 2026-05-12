@@ -293,7 +293,7 @@ p {
     align-items: center;
 }
 .p-sect h2, .p-sect p, .p-sect ul {
-    max-width: 311px; 
+    min-width: 311px; 
 }
 
 .p-sect h2 {
@@ -317,6 +317,10 @@ p {
 }
 
 @media screen and (min-width: 720px) {
+    p {
+        line-height: 1.5rem;
+    }
+    
     #toggle-nav-btn {
         display: none;
     }
@@ -344,7 +348,6 @@ p {
     .nav ul li {
         padding: 0 1em 0 1em;
         display: inline-block;
-        /* margin: 0 1em 0 1em;  */
         line-height: 2rem;
     }
 
@@ -468,7 +471,7 @@ p {
     }
 
     #p1 p, #p2 p, #p3 p, #p4 p {
-        grid-area: p
+        grid-area: p;
     }
 
     #p1 ul {
@@ -547,6 +550,58 @@ p {
         margin: 8em;
     }
 
+    /* === principles === */
+    #p-header {
+        margin-bottom: 10rem;
+    }
+
+    #p-header h1 {
+        font-size: 11rem;
+    }
+
+    #p-header h2 {
+        font-size: 5rem;
+    }
+
+    #p-intro {
+        gap: 3rem;
+        margin-bottom: 12rem;
+    }
+
+    #p-intro * {
+        max-width: 500px;
+    }
+
+    #p-intro h2 {
+        font-size: 4rem;
+    }
+
+    #p-intro p {
+        font-size: 1.6rem;
+    }
+
+    .p-sect h2, .p-sect p, .p-sect ul {
+        max-width: 500px; 
+    }
+
+    #p1 h2, #p2 h2, #p3 h2, #p4 h2 {
+        font-size: 3rem;
+        grid-area: title
+    }
+
+    #p1 p, #p1 ul, #p2 p, #p3 p, #p4 p {
+        font-size: 1.3rem;
+    }
+    
+    #p1 #p1-kanji {
+        font-size: 7rem;
+    }
+
+    .btn {
+        font-size: 1.3rem;
+        padding: 1.3rem;
+        justify-self: center;
+    }
 }
 
 
