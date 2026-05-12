@@ -162,7 +162,7 @@ body {
 #ck-1 {
     position: absolute;
     top: -20%; 
-    left: 48%; 
+    left: 44%; 
     transform: translate(-50%, 50%);
     color: #eae6e2;
     font-size: 1.2rem;
@@ -174,7 +174,7 @@ body {
 #ck-2 {
     position: absolute;
     top: 40%; 
-    left: 52%;
+    left: 46%;
     transform: translate(50%, -50%);
     color: #eae6e2;
     font-size: 1.2rem;
@@ -367,6 +367,14 @@ body {
         font-size: 1.5rem;
     }
 
+    #ck-1 {
+        left: 46%; 
+    }
+
+    #ck-2 {
+        left: 47%; 
+    }
+
     #cp p {
         padding-top: 1rem;
         min-width: 400px;
@@ -422,6 +430,22 @@ body {
 
     #cp {
         top: 85%;
+    }
+
+    #home-intro * {
+        max-width: 400px;
+    }
+
+    #home-intro h2 {
+        font-size: 4rem;
+    }
+
+    #home-intro p {
+        font-size: 1.4rem;
+    }
+
+    #title-desc {
+        margin: 8em;
     }
 }
 
