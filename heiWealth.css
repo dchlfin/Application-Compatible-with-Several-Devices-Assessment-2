@@ -577,7 +577,7 @@ p {
     }
 
     #p-intro p {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .p-sect h2, .p-sect p, .p-sect ul {
@@ -585,22 +585,21 @@ p {
     }
 
     #p1 h2, #p2 h2, #p3 h2, #p4 h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         grid-area: title
     }
 
-    #p1 p, #p1 ul, #p2 p, #p3 p, #p4 p {
-        font-size: 1.3rem;
+    #p1 p, #p1 ul, #p2 p, #p3 p, #p4 p, .btn {
+        font-size: 1.1rem;
     }
     
     #p1 #p1-kanji {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 
     .btn {
-        font-size: 1.3rem;
         padding: 1.3rem;
-        justify-self: center;
+        justify-self: self-start; 
     }
 }
 
