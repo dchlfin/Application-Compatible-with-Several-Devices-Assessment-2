@@ -426,7 +426,7 @@ p {
     font-size: 3em;
 }
 
-.syllable .syllable-header h3 {
+.syllable .syllable-header h3, .syllable .syllable-header p, #s-full {
     text-align: center; 
 }
 
