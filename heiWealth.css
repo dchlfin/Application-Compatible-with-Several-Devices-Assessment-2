@@ -229,8 +229,9 @@ body {
     text-decoration: none;
     margin: 3rem;
     font-size: 1rem; 
-    grid-area: btn;
     text-align: center;
+    justify-self: center;
+    grid-area: btn;
 }
 
 /* === principles === */
@@ -287,9 +288,8 @@ body {
     padding: 7rem 1rem; 
     align-items: center;
 }
-
-.p-sect h2, .p-sect p {
-    min-width: 311px; 
+.p-sect h2, .p-sect p, .p-sect ul {
+    max-width: 311px; 
 }
 
 .p-sect h2 {
@@ -469,6 +469,10 @@ body {
 
     #p1 ul {
         grid-area: ul;
+    }
+
+    .btn {
+        justify-self: self-start;
     }
 }
 
