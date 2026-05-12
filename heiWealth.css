@@ -364,17 +364,6 @@ body {
         position: absolute;
         right: max(calc(690px * 2.05), 100%); 
     }
-
-    .img1 {
-        animation-delay: calc(40s / 3 * (3 - 1) * -1);
-    }
-
-    .img2 {
-        animation-delay: calc(40s / 3 * (3 - 2) * -1);
-    }
-
-    .img3 {
-        animation-delay: calc(40s / 3 * (3 - 3) * -1);}
     
     #ck-1, #ck-2 {
         font-size: 1.5rem;
@@ -400,6 +389,10 @@ body {
     #title-desc {
         margin: 5em;
     }
+}
+
+@media screen and (min-width: 1024px) {
+
 }
 
 
