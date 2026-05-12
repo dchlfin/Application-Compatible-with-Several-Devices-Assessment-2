@@ -349,7 +349,7 @@ p {
     gap: 2rem;
 }
 
-#d-details-visual * {
+#d-details-visual *, #d-steps * {
     max-width: 100%;
     height: auto;
 }
@@ -377,10 +377,32 @@ p {
 }
 
 #d-details-visual .detail p {
-    margin: 1em;
+    margin: 1rem;
     font-size: .9rem;
 }
 
+#d-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border: 1px solid transparent;
+    padding: 5rem 1rem;
+    gap: 2rem;
+}
+
+#d-steps h2, #d-steps p {
+    text-align: center;
+}
+
+#d-steps .kanji {
+    writing-mode: vertical-rl; 
+    font-size: 2rem;
+}
+
+#d-steps h3 {
+    font-family: "Vollkorn", serif; 
+    font-weight: 400; 
+}
 
 @media screen and (min-width: 720px) {
     p {
