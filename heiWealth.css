@@ -340,15 +340,17 @@ p {
 #d-details-visual {
     display: flex; 
     flex-direction: column; 
-    background-color: #dbd6d0;
-    height: 112rem; 
-    margin-bottom: 15rem;
+    /* background-color: #dbd6d0; */
+    background-image: linear-gradient(#dbd6d0, #dbd6d0, #eae6e2);
+    min-height: 112rem; 
+    margin-bottom: 5rem;
     padding: 5rem 1rem;
     align-items: center;
     gap: 2rem;
+    overflow: hidden;
 }
 
-#d-details-visual *, #d-steps * {
+#d-details-visual img, #d-steps img {
     max-width: 100%;
     height: auto;
 }
@@ -412,10 +414,14 @@ p {
     align-items: center;
     border: 1px solid transparent; 
     background-color: #dbd6d0;
+    margin-bottom: 5rem; 
     padding: 1rem; 
     gap: 1rem;
-    max-width: 500px;
+    height: 600px;
+    width: clamp(343px, 50%, 600px);
     justify-self: center;
+    justify-content: space-between;
+
 }
 
 .syllable-header {
@@ -450,6 +456,7 @@ p {
     "c2 c2-values"
     "c3 c3-values";
     justify-content: center;
+    overflow: hidden;
 }
 
 .syllable .syllable-info * {
@@ -649,6 +656,9 @@ p {
     .btn {
         justify-self: self-start;
     }
+
+    /* === diet === */
+
 }
 
 @media screen and (min-width: 1024px) {
