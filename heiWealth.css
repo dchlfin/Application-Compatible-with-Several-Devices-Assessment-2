@@ -360,8 +360,6 @@ body {
     .carousel div img {
         width: 690px;
         height: 460px;
-        z-index: -1;
-        position: absolute;
         right: max(calc(690px * 2.05), 100%); 
     }
     
