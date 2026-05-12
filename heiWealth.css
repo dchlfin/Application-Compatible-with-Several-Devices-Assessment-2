@@ -390,7 +390,39 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+    @keyframes scrollright {
+        to {
+            right: -805px;
+        }
+    }
 
+    .carousel {
+        height: 537px;
+    }
+
+    .carousel div img {
+        width: 805px;
+        height: 537px;
+        z-index: -1;
+        position: absolute;
+        right: max(calc(805px * 2.05), 100%); 
+    }
+
+    #ck-1, #ck-2 {
+        font-size: 1.8rem;
+    }
+
+    #ck-1 {
+        left: 47%; 
+    }
+
+    #ck-2 {
+        left: 47%; 
+    }
+
+    #cp {
+        top: 85%;
+    }
 }
 
 
