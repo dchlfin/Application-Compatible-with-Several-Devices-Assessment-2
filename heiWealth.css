@@ -319,6 +319,9 @@ p {
 /* === diet === */
 #d-intro {
     margin: 10rem 2rem;
+    justify-self: center;
+    width: clamp(279px, 100%, 400px);
+    
 }
 
 #d-desc {
@@ -327,10 +330,8 @@ p {
     align-items: center;
     gap: 2rem;
     margin-bottom: 10rem;
-}
-
-#d-desc * {
-    max-width: 300px;
+    width: clamp(343px, 100%, 400px);
+    justify-self: center; 
 }
 
 #d-desc .kanji {
@@ -382,6 +383,34 @@ p {
     font-size: .9rem;
 }
 
+#d-details-visual img {
+    grid-area: img;
+}
+
+#d-details-visual #dp {
+    grid-area: dp; 
+}
+
+#d1 {
+    grid-area: d1; 
+}
+
+#d2 {
+    grid-area: d2;
+}
+
+#d3 {
+    grid-area: d3;
+}
+
+#d4 {
+    grid-area: d4;
+}
+
+#d5 {
+    grid-area: d5; 
+}
+
 #d-steps {
     display: flex;
     flex-direction: column;
@@ -393,6 +422,10 @@ p {
 
 #d-steps h2, #d-steps p {
     text-align: center;
+}
+
+#d-steps p {
+    width: clamp(310px, 100%, 555px);
 }
 
 #d-steps .kanji {
@@ -658,7 +691,45 @@ p {
     }
 
     /* === diet === */
+    #d-desc h2, #d-steps h2, #d-steps h3 {
+        font-size: 2em; 
+    }
 
+    #d-desc .kanji, #d-steps .kanji {
+        font-size: 3.5em
+    }
+
+    #d-details-visual {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 0; 
+        grid-template-areas:
+        "dp dp"
+        "d1 d2"
+        "d3 d3"
+        "d4 d5"
+        "img img"; 
+        align-items: flex-start; 
+    }
+
+    #d-details-visual * {
+        justify-self: center;
+    }
+
+    #d-details-visual p {
+        font-size: 1.2rem;
+    }
+
+    #d-details-visual .detail .kanji {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    #d-steps {
+        gap: 4rem;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) {
