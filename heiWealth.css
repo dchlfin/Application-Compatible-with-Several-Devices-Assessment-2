@@ -316,6 +316,28 @@ p {
     background-size: cover;
 }
 
+/* === diet === */
+#d-intro {
+    margin: 10rem 2rem;
+}
+
+#d-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+#d-desc * {
+    max-width: 300px;
+}
+
+#d-desc .kanji {
+    font-size: 3rem; 
+}
+
 @media screen and (min-width: 720px) {
     p {
         line-height: 1.5rem;
