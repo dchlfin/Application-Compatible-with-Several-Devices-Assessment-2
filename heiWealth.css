@@ -703,7 +703,8 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto auto auto;
-        gap: 0; 
+        height: 9rem;
+        gap: 1rem; 
         grid-template-areas:
         "dp dp"
         "d1 d2"
@@ -721,6 +722,10 @@ p {
         font-size: 1.2rem;
     }
 
+    #d-details-visual img {
+        width: clamp(500px, 100%, 600px);
+    }
+
     #d-details-visual .detail .kanji {
         width: 12rem;
         height: 12rem;
@@ -729,7 +734,6 @@ p {
     #d-steps {
         gap: 4rem;
     }
-    
 }
 
 @media screen and (min-width: 1024px) {
@@ -849,6 +853,44 @@ p {
     .btn {
         padding: 1.3rem;
         justify-self: self-start; 
+    }
+
+    /* === diet === */
+    #d-desc h2, #d-steps h2, #d-steps h3 {
+        font-size: 2.4em; 
+    }
+
+    #d-intro p, #d-desc p {
+        font-size: 1.3em;
+    }
+
+    #d-details-visual {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1rem; 
+        min-height: 9rem;
+        grid-template-areas:
+        "dp dp dp dp dp"
+        "d1 d2 d3 d4 d5"
+        "img img img img img"; 
+        align-items: flex-start; 
+    }
+
+    #d-details-visual * {
+        justify-self: center;
+    }
+
+    #d-details-visual p {
+        font-size: 1.2rem;
+    }
+
+    #d-details-visual .detail .kanji {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    #d-steps {
+        gap: 5rem;
     }
 }
 
