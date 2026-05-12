@@ -340,7 +340,6 @@ p {
 #d-details-visual {
     display: flex; 
     flex-direction: column; 
-    border: 0 solid #dbd6d0;
     background-color: #dbd6d0;
     height: 112rem; 
     margin-bottom: 15rem;
@@ -402,6 +401,87 @@ p {
 #d-steps h3 {
     font-family: "Vollkorn", serif; 
     font-weight: 400; 
+}
+
+.syllable, .syllable .syllable-header, .syllable .syllable-header .kanji {
+    display: flex;
+    flex-direction: column;
+}
+
+.syllable { 
+    align-items: center;
+    border: 1px solid transparent; 
+    background-color: #dbd6d0;
+    padding: 1rem; 
+    gap: 1rem;
+    max-width: 500px;
+    justify-self: center;
+}
+
+.syllable-header {
+    gap: 1rem; 
+}
+
+.syllable .syllable-header h2, .syllable .syllable-header h3 {
+    font-size: 3em;
+}
+
+.syllable .syllable-header h3 {
+    text-align: center; 
+}
+
+.syllable .syllable-header .kanji {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent; 
+    background-color: #eae6e2;
+    border-radius: 100%; 
+    padding: 1px;
+    width: 10rem;
+    height: 10rem;
+}
+
+.syllable .syllable-info {
+    border: 1px solid #eae6e2;
+    background-color: #eae6e2;
+    display: grid; 
+    grid-template-areas: 
+    "c1 c1-values"
+    "c2 c2-values"
+    "c3 c3-values";
+    justify-content: center;
+}
+
+.syllable .syllable-info * {
+    align-self: stretch;
+    padding: 1rem;
+    border: 1px solid #211009;
+}
+
+#c1 {
+    grid-area: c1
+}
+#c2 {
+    grid-area: c2
+}
+#c3 {
+    grid-area: c3
+}
+#c1-values {
+    grid-area: c1-values
+}
+#c2-values {
+    grid-area: c2-values
+}
+#c3-values {
+    grid-area: c3-values
+    
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row; 
+    gap: 1rem;
 }
 
 @media screen and (min-width: 720px) {
