@@ -227,8 +227,10 @@ body {
     padding: .5rem 2rem; 
     display: inline-block;
     text-decoration: none;
-    margin: 2rem;
+    margin: 3rem;
     font-size: 1rem; 
+    grid-area: btn;
+    text-align: center;
 }
 
 /* === principles === */
@@ -419,7 +421,55 @@ body {
         font-size: 1.2rem;
     }
 
-    
+    .p-sect {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #p1 {
+        grid-template-areas:
+        "title kanji"
+        "p kanji"
+        "ul kanji"
+    }
+
+    #p2 {
+        grid-template-areas:
+        "title none"
+        "p none"
+    }
+
+    #p3 {
+        grid-template-areas:
+        "none title"
+        "none p"
+    }
+
+    #p4 {
+        grid-template-areas:
+        "title none"
+        "p none"
+        "btn none"
+    }
+
+    #p1 h2, #p2 h2, #p3 h2, #p4 h2 {
+        font-size: 2rem;
+        grid-area: title
+    }
+
+    #p1 #p1-kanji {
+        font-size: 5rem;
+        writing-mode: vertical-rl;
+        grid-area: kanji;
+    }
+
+    #p1 p, #p2 p, #p3 p, #p4 p {
+        grid-area: p
+    }
+
+    #p1 ul {
+        grid-area: ul;
+    }
 }
 
 @media screen and (min-width: 1024px) {
