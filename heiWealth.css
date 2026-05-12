@@ -32,6 +32,10 @@ body {
     margin: 0 1rem;
 }
 
+p {
+    line-height: 1.4rem;
+}
+
 #brand-kanji {
     border: 0.0625em solid #8e3939;
     background-color: #8e3939;
