@@ -458,6 +458,7 @@ p {
 
 .syllable-header {
     gap: 1rem; 
+    grid-area: header;
 }
 
 .syllable .syllable-header h2, .syllable .syllable-header h3 {
@@ -483,12 +484,16 @@ p {
     border: 1px solid #eae6e2;
     background-color: #eae6e2;
     display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
     grid-template-areas: 
     "c1 c1-values"
     "c2 c2-values"
     "c3 c3-values";
     justify-content: center;
     overflow: hidden;
+    grid-area: info;
+    height: 276px; 
 }
 
 .syllable .syllable-info * {
@@ -521,6 +526,7 @@ p {
     display: flex;
     flex-direction: row; 
     gap: 1rem;
+    grid-area: btns; 
 }
 
 @media screen and (min-width: 720px) {
@@ -731,6 +737,36 @@ p {
 
     #d-steps {
         gap: 4rem;
+    }
+
+    .syllable {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows:1fr auto; 
+        grid-template-areas:
+        "header info"
+        "btns btns";
+        align-items: center;
+        width: 600px !important;
+        height: 350px;
+    }
+
+    /* .syllable-header {
+        align-self:center !important;
+    } */
+
+    .syllable .syllable-header .kanji {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .syllable #s-kanji {
+        font-size: 3rem;
+    }
+
+    .button-container {
+        align-self:stretch;
+        justify-content: center;
     }
 }
 
