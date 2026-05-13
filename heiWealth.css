@@ -530,6 +530,13 @@ p {
     display: flex;
     flex-direction: row; 
     gap: 1rem;
+    border: 1px solid #eae6e2;
+    background-color: #eae6e2; 
+    width: fit-content; 
+    justify-self: center; 
+    align-items: center;
+    border-radius: 17%; 
+    padding: .5rem 2rem;
     grid-area: btns; 
 }
 
@@ -748,7 +755,7 @@ p {
         "btns btns";
         align-items: center;
         width: 600px !important;
-        height: 350px;
+        height: 370px;
     }
 
     .syllable .syllable-header .kanji {
