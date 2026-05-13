@@ -166,7 +166,7 @@ p {
 #ck-1 {
     position: absolute;
     top: -20%; 
-    left: 44%; 
+    left: clamp(44%, 100%, 47%); 
     transform: translate(-50%, 50%);
     color: #eae6e2;
     font-size: 1.2rem;
@@ -178,7 +178,7 @@ p {
 #ck-2 {
     position: absolute;
     top: 40%; 
-    left: 46%;
+    left: clamp(41%, 100%, 48%); 
     transform: translate(50%, -50%);
     color: #eae6e2;
     font-size: 1.2rem;
@@ -189,7 +189,7 @@ p {
 
 #cp {
     position: absolute;
-    top: 80%;
+    top: 80%; 
     left: 50%;
     transform: translate(-50%, 40%);
     font-family: "Volkorn", serif;
@@ -341,7 +341,6 @@ p {
 #d-details-visual {
     display: flex; 
     flex-direction: column; 
-    /* background-color: #dbd6d0; */
     background-image: linear-gradient(#dbd6d0, #dbd6d0, #eae6e2);
     min-height: 112rem; 
     margin-bottom: 5rem;
@@ -420,6 +419,10 @@ p {
     gap: 2rem;
 }
 
+#d-steps img {
+    width: clamp(310px, 100%, 555px); 
+}
+
 #d-steps h2, #d-steps p {
     text-align: center;
 }
@@ -479,6 +482,7 @@ p {
     width: 6rem;
     height: 6rem;
 }
+
 
 .syllable .syllable-info {
     border: 1px solid #eae6e2;
@@ -589,14 +593,6 @@ p {
     
     #ck-1, #ck-2 {
         font-size: 1.5rem;
-    }
-
-    #ck-1 {
-        left: 46%; 
-    }
-
-    #ck-2 {
-        left: 47%; 
     }
 
     #cp p {
@@ -739,6 +735,10 @@ p {
         gap: 4rem;
     }
 
+    #d-steps img {
+        width: clamp(555px, 100%, 645px); 
+    }
+
     .syllable {
         display: grid;
         grid-template-columns: 1fr 1fr; 
@@ -750,10 +750,6 @@ p {
         width: 600px !important;
         height: 350px;
     }
-
-    /* .syllable-header {
-        align-self:center !important;
-    } */
 
     .syllable .syllable-header .kanji {
         width: 7rem;
@@ -807,18 +803,6 @@ p {
 
     #ck-1, #ck-2 {
         font-size: 1.8rem;
-    }
-
-    #ck-1 {
-        left: 47%; 
-    }
-
-    #ck-2 {
-        left: 48%; 
-    }
-
-    #cp {
-        top: 85%;
     }
 
     #home-intro * {
