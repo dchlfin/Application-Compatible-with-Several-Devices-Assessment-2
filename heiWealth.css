@@ -542,6 +542,7 @@ p {
     border-radius: 17%; 
     padding: .5rem 2rem;
     grid-area: btns; 
+    cursor: pointer; 
 }
 
 /* === game === */
