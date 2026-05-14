@@ -599,6 +599,7 @@ p {
 .question {
     padding: 1.5rem 1.5rem 0 1.5rem; 
     margin-bottom: 2rem;
+    width: 400px;
 }
 
 .question-title {
@@ -623,8 +624,9 @@ p {
 
 .question-text {
     display: none;
-    padding: 1rem 0 1.5rem 0; 
+    padding: 1rem 1rem .5rem 1rem; 
     border-top: 1px solid #211009;
+    background-image: linear-gradient(#b5abaa,#eae6e2, #eae6e2, #eae6e2)
 }
 
 .question-title p, .question-text p {
