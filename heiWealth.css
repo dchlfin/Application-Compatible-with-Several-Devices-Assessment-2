@@ -591,6 +591,7 @@ p {
     align-items: center;
     width: clamp(343px, 80vw, 484px); 
     aspect-ratio: 1; 
+    margin-bottom: 5em; 
 }
 
 .dish {
@@ -623,6 +624,34 @@ p {
 
 #pickles {
     grid-area: pickles; 
+}
+
+.set-builder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    justify-content: center; 
+    justify-self: center;
+    width: clamp(343px, 100%, 484px);
+    gap: 15px;  
+    padding: 15px;
+    background-color: #faf9f6;
+    border-radius: 10%;
+}
+.dropdown p {
+    justify-self: stretch;
+    border: 1px solid #eae6e2;
+    background-color: #eae6e2;  
+    border-radius: 10%;
+    padding: 15px;
+}
+
+.dropdown p:hover {
+    background-image: linear-gradient(#b5abaa, #eae6e2)
+}
+
+.dropdown-opts {
+   display: none; 
 }
 
 /* === faq === */
