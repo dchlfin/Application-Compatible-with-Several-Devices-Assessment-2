@@ -636,22 +636,43 @@ p {
     gap: 15px;  
     padding: 15px;
     background-color: #faf9f6;
-    border-radius: 10%;
+    margin-bottom: 10rem;
 }
+
+.dropdown {
+    position: relative;
+}
+
 .dropdown p {
-    justify-self: stretch;
     border: 1px solid #eae6e2;
     background-color: #eae6e2;  
     border-radius: 10%;
     padding: 15px;
+    cursor: pointer;
 }
 
 .dropdown p:hover {
-    background-image: linear-gradient(#b5abaa, #eae6e2)
+    background-image: linear-gradient(#b5abaa, #eae6e2);
 }
 
 .dropdown-opts {
    display: none; 
+   position: absolute; 
+   top: 100%; 
+   left: 0; 
+   background-color: #eae6e2; 
+   flex-direction: column; 
+   width: clamp(149px, 100%, 220px);
+   justify-self: center; 
+   z-index: 100;
+}
+
+.dropdown-opts button {
+    padding: 10px; 
+
+}
+.dropdown:hover .dropdown-opts {
+    display: flex;
 }
 
 /* === faq === */
@@ -743,6 +764,8 @@ p {
 .show-text .plus-icon {
     display: none;
 }
+
+
 
 @media screen and (min-width: 720px) {
     p {
