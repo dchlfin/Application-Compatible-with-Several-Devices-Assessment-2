@@ -54,7 +54,7 @@ p {
 }
 
 .hei {
-    font-family: "Volkorn", serif;
+    font-family: "Vollkorn", serif;
     font-style: italic;
     font-weight: 400;
     padding-right: .2em; 
@@ -573,17 +573,27 @@ p {
 .faq-container {
     display: flex; 
     flex-direction: column;
-    align-items: center;  
+    align-items: center; 
+    margin-bottom: 3rem;
+}
+
+.faq-header {
+    margin: 2rem 0 2rem 0; 
+}
+
+.faq-header h1 {
+    font-family: "Vollkorn", serif; 
+    font-style: italic; 
 }
 
 #q2-table {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr auto auto auto;
-    justify-content: center;
+    justify-self: center;
     align-items: stretch;
     border: 1px solid #211009;
-    width: 300px; 
+    width: clamp(200px, 100%, 300px); 
     margin-top: 1rem; 
 }
 
@@ -599,7 +609,7 @@ p {
 .question {
     padding: 1.5rem 1.5rem 0 1.5rem; 
     margin-bottom: 2rem;
-    width: 400px;
+    width: clamp(343px, 100%, 400px);
 }
 
 .question-title {
@@ -625,8 +635,8 @@ p {
 .question-text {
     display: none;
     padding: 1rem 1rem .5rem 1rem; 
-    border-top: 1px solid #211009;
-    background-image: linear-gradient(#b5abaa,#eae6e2, #eae6e2, #eae6e2)
+    border-top: 1px solid #b7baa5;
+    background-image: linear-gradient(#b7baa5,#eae6e2, #eae6e2, #eae6e2, #eae6e2)
 }
 
 .question-title p, .question-text p {
