@@ -132,11 +132,9 @@ if (document.getElementById('s-kanji')) {
         showSyllable(currentItem); 
     })
 }
-
 // syllable flashcards end
 
 // faq question start
-
 if (document.querySelector('.question')) {
         const questions = document.querySelectorAll(".question");
 
@@ -259,5 +257,5 @@ if (document.querySelector('.dropdown')) {
             plateSection.textContent = '';
         });
     });
-}
-
+};
+// build your plate end
